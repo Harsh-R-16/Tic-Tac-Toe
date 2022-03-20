@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  transition: background-color 0.3s ease-in;
+  letter-spacing: 1.5px;
+}
+h1 {
+  padding: 18px 0;
+  letter-spacing: 2px;
+  border-bottom: 1px solid #cacaca;
+  background-color: #fdf9ff;
+  color: #302e4d;
+}
+body {
+  text-align: center;
+  background-color: #f2f2fc;
+}
+section {
+  display: grid;
+  width: fit-content;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: #302e4d;
+}
+section div {
+  width: 80px;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 55px;
+  cursor: pointer;
+  border-color: #302e4d;
+  font-weight: 400;
+}
+
+div:nth-of-type(2),
+div:nth-of-type(8) {
+  border-left: 1.5px solid;
+  border-right: 1.5px solid;
+}
+div:nth-of-type(4),
+div:nth-of-type(6) {
+  border-top: 1.5px solid;
+  border-bottom: 1.5px solid;
+}
+div:nth-of-type(5) {
+  border: 1.5px solid;
+}
+
+h1 span {
+  position: absolute;
+  right: 20px;
+  height: 35px;
+  aspect-ratio: 1;
+  background-color: #302e4d;
+  border-radius: 50%;
+}
+.span {
+  background-color: #fff;
+}
+.h1 {
+  color: #fff;
+  background-color: #222222;
+}
+.body {
+  background-color: #151515;
+}
+.sec {
+  color: #fff;
+  border-color: #fff;
+}
+.h2 {
+  color: #fff;
+}
+
+button {
+  font-size: 20px;
+  background-color: #302e4d;
+  color: #fdf9ff;
+  font-weight: 400;
+  margin-top: 50px;
+  padding: 10px 20px;
+  border: 1px solid #cacaca;
+  letter-spacing: 2px;
+}
+
+h2 {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 5vh);
+  color: red;
+}
+article {
+  margin: 0 auto;
+  margin-top: 20vh;
+  width: fit-content;
+  position: relative;
+}
+article hr {
+  border: none;
+  top: 0px;
+  left: 0;
+  border-top: 4px solid green;
+  position: absolute;
+  width: 100%;
+  display: none;
+}
+#hr2 {
+  top: 100%;
+  width: 140%;
+  transform: rotate(-45deg);
+  transform-origin: 0;
+  display: none;
+}
