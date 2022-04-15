@@ -8,7 +8,7 @@ Created Tic Tac Toe Game with Javascript. Also Implemented Dark Mode and Light M
 
 # Deployed link of the Website
 
-> [MovieDB.com](https://tic-tac-toe-js-harsh.netlify.app/)
+> [Tic-Tac-Toe](https://tic-tac-toe-js-harsh.netlify.app/)
 
 # Technology Used
 
