@@ -5,6 +5,11 @@ let h2 = document.querySelector("h2");
 let hr1 = document.querySelector("#hr1");
 let hr2 = document.querySelector("#hr2");
 let a;
+
+let winingSound = new Audio("winingSound.mp3");
+let ding = new Audio("ding.wav");
+let dong = new Audio("dong.wav");
+
 reset();
 sec.addEventListener("mouseover", function (e) {
   let div = e.target;
@@ -23,11 +28,17 @@ sec.addEventListener("mouseout", function (e) {
 sec.addEventListener("click", function (e) {
   let div = e.target;
   if (div.classList.contains("notFixed")) {
-    if (c % 2) div.innerHTML = "X";
-    else div.innerHTML = "O";
+    if (c % 2) {
+      div.innerHTML = "X";
+      ding.play();
+    } else {
+      div.innerHTML = "O";
+      dong.play();
+    }
     div.style.cursor = "not-allowed";
     arr[Math.floor(div.id / 3)][div.id % 3] = div.innerHTML;
     if (check(arr)) {
+      winingSound.play();
       h2.innerHTML = check(arr)[0] + " wins";
       document.querySelectorAll("div").forEach(function (div) {
         div.classList.remove("notFixed");
