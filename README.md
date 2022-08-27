@@ -10,7 +10,7 @@ Created Tic Tac Toe Game with Javascript. Also Implemented Dark Mode and Light M
 
 > [Tic-Tac-Toe](https://tic-tac-toe-js-harsh.netlify.app/)
 
-# Technology Used
+# Created With
 
 1. HTML
 2. CSS
